@@ -1,0 +1,23 @@
+div {
+    border: 10px solid white;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 150px;
+}
+
+div h1 {
+    color: pink;
+}
+
+div {
+    border: 15px solid greenyellow ;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100;
+}
+
+div {
+    color:brown;
+
+    div {
+        border: 15px solid red;
