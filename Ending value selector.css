@@ -1,0 +1,3 @@
+a[href$='.pdf'] {background-image: url('pdf.png');}
+a[href$='.doc'] {background-image: url('word.png');}
+a[href$='.rss'] {background-image: url('feed.png');}

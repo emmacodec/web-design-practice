@@ -1,0 +1,5 @@
+ul {overflow: hidden;} 
+li {float: left;}
+@media only screen and (orientation:portrait) {
+    li {float: none;}
+}

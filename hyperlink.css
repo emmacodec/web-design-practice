@@ -1,0 +1,6 @@
+a[href^='http'] {
+    background: url('link-go.png') no-repeat left center;
+    display: inline-block;
+    padding: 20px;
+    background-color: blue;
+}

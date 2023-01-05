@@ -1,0 +1,3 @@
+a[href^='mailto'] {background-image: url('email_go.png');}
+a[href^='ftp'] {background-image: url('folder_go.png');}
+a[href^='http'] {background-image: url('lock');}

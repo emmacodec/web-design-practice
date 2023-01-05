@@ -1,0 +1,4 @@
+h2 + p {font-weight: bolder;} /* Adjacent sibling*/
+h2 + p {font-style: italic;} /* General sibling*/
+p {font-style: italic;}
+blockquote p {font-style: normal;}
