@@ -1,0 +1,40 @@
+<style>
+   .border {
+    -moz-background-origin: border;
+    -webkit-background-origin: border;
+    -webkit-background-origin: border-box;
+    background-origin: border-box;
+    background-image: linear-gradient('IMG_20220731_105810_774.jpg');
+    background-position: 95% 85%,50% 50%;
+    background-repeat: no-repeat;
+    border-width: 20px;
+    padding: 20px;
+    
+   } 
+   .padding {
+    -moz-background-origin: padding;
+    -webkit-background-origin: padding;
+    -webkit-background-origin: padding-box;
+    background-origin: padding-box;
+    background: local('IMG_20220731_105810_774.jpg')no-repeat 0px 100px rgb(255, 255, 255);
+    border-width: 20px;
+    padding: 20px;
+    }
+    .content {
+        -moz-background-origin: content;
+        -webkit-background-origin: content;
+        -webkit-background-origin: content-box;
+        background-origin: content-box;
+        background: local('IMG_20220731_105810_774.jpg')no-repeat 0px 100px #fff;
+    border-width: 20px;
+    padding: 20px;
+    }
+    div[class^='origin'] {background: local('IMG_20220731_105810_774.jpg') no-repeat 0px 100px;}
+    div[class$='-border'] {background-origin: border-box;}
+    div[class$='-padding'] {background-origin: padding-box;}
+    div[class$='-content'] {background-origin: content-box;}
+</style>
+<div class="origin">origin</div>
+<div class="border">border</div>
+<div class="padding">padding</div>
+<div class="content">content</div>
