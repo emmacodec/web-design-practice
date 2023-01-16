@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <header>
+            <style>
+                .linears {
+                    background-image:
+                     -moz-linear-gradient(left top,black,yellow,transparent),
+                     -moz-linear-gradient(right top,black,yellow,transparent);
+                     background-image: 
+                     -webkit-gradient(linear,left top,right bottom,from(black),color-stop(50%,yellow),to(transparent)),
+                     -webkit-gradient(linear,right top,left bottom,from(black),color-stop(50%,yellow),to(transparent));
+                     padding: 20px;
+                     margin: 8px;
+                }
+                .radials {
+                    background-image: 
+                    -moz-radial-gradient(20% 50%,circle contain,white,black, 95%,transparent),
+                    -moz-radial-gradient(50% 50%,circle contain,white,black,95%,transparent),
+                    -moz-radial-gradient(80% 50%,circle contain,white,black,95%,transparent);
+                    background-image: 
+                    -webkit-gradient(radial,20% 50%,0,20% 50%,50,from(white),color-stop(95%,black),to(transparent)),
+                    -webkit-gradient(radial,50% 50%,0,50% 50%,50,from(white),color-stop(95%,black),to(transparent)),
+                    -webkit-gradient(radial,80% 50%,0,80% 50%,50,from(white),color-stop(95%,black),to(transparent));
+                    padding: 20px;
+                    margin: 8px;
+                }
+            </style>
+            <div class="linears">dan</div>
+            <div class="radials">emmy</div>
+        </header>
+    </head>
+</html>
