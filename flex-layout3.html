@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div[class^='box-holder'] {display: -webkit-box;}
+            div[class^='flex'] {
+                width: 60px;
+                -webkit-box-flex: 1;
+            }
+            div.flex-1 {-webkit-box-flex: 2;}
+            .box-holder-one .flex-1 .box-holder-one .flex-2 {-webkit-box-flex: 2;}
+            .box-holder-one .flex-3 {-webkit-box-flex: 3;}
+            .box-holder-two .flex-one .box-holder-two .flex-two {-webkit-box-flex: 3;}
+            .box-holder-two .flex-three {-webkit-box-flex: 2;}
+            
+
+        </style>
+        <body>
+            <header>
+                <div class="box-holder-one">
+                    <div class="flex-1">20,000 Leagues Under the sea</div>
+                    <div class="flex-2">20,000 Leagues Under the sea</div>
+                    <div class="flex-3">20,000 Leagues Under the sea</div>
+                </div>
+                <div class="box-holder-two">
+                    <div class="flex-one">20,000 Leagues Under the sea</div>
+                    <div class="flex-two">20,000 Leagues Under the sea</div>
+                    <div class="flex-three">20,000 Leagues Under the sea</div>
+                </div>
+            </header>
+        </body>
+    </head>
+</html>
