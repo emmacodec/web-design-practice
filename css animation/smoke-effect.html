@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>smoke effect using HTML & CSS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif,cursive;
+
+        }
+        /* /* section {
+            position: relative;
+            width: 100vh;
+            height: 100vh;
+            background: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        } */
+        section h2 {
+            color: #fff !important;
+            font-size: 10em;
+            mix-blend-mode: overlay;
+            position: absolute;
+            top: 25%;
+            left: 20%;
+        }
+        section video{
+            object-fit: cover;
+        }
+    </style>
+    
+</head>
+<body>
+    <section>
+        <h2>CSS effect</h2>
+        <video src="./smoke.mp4" muted autoplay loop></video>
+    </section>
+</body>
+</html>

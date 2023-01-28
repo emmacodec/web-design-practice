@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>leaft animation</title>
+    <style>
+        *.body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        section{
+            position: absolute;
+            width: 80em;
+            height: 80em;
+            background: radial-gradient(#333,#000);
+        }
+        .set{
+            position: absolute;
+            width: 40em;
+            height: 40em;
+            top: 0;
+            left: 0;
+
+        }
+        .set div{
+            position: absolute;
+            display: block;
+        }
+        .set div:nth-child(1) {
+             left: 20em;
+             -webkit-animation: animate 15s linear infinite;
+        }
+        
+        .set div:nth-child(2) {
+            left: 40em;
+            -webkit-animation: animate 25s linear infinite;
+        }
+        .set div:nth-child(3) {
+            left: 60em;
+           -webkit-animation: animate 11s linear infinite;
+        }
+        .set div:nth-child(4) {
+            left: 0em;
+     -webkit-animation: animate 13s linear infinite;
+        }
+        .set div:nth-child(5) {
+            left: 85em;
+             -webkit-animation: animate 9s linear infinite;
+        }
+        .set div:nth-child(6) {
+            left: 69em;
+             -webkit-animation: animate 4s linear infinite;
+        }
+        .set div:nth-child(7) {
+            left: 75em;
+         -webkit-animation: animate 6s linear infinite;
+        }
+        .set div:nth-child(8) {
+            left: 25em;
+     -webkit-animation: animate 8s linear infinite;
+        }
+ 
+        @keyframes animate{
+            0%{
+                opacity: 0;
+                top: -10%;
+                transform: translateY(-20px) rotate(0deg);
+            }
+            10%{
+                opacity: 1;
+            }
+            20%{
+                transform: translateX(-20px) rotate(45deg);
+            }
+            40%{
+                transform: translateX(-20px) rotate(90deg);
+            }
+            60%{
+                transform: translateX(-20px) rotate(135deg);
+            }
+            80%{
+                transform: translateX(-20px) rotate(180deg);
+            }
+            100%{
+                transform: translateX(-20px) rotate(225deg);
+                top: 110%;
+            }
+        } 
+        .set2{
+            transform: scale(2) rotateY(180deg);
+            filter: blur(4px);
+        }
+        .set3{
+            transform: scale(0.8) rotateX(180deg);
+            filter: blur(1px);
+        }
+
+
+        .is-white {
+            color: white;
+        }
+        h2{
+            position: absolute;
+            color: green !important;
+            top: 25%;
+            left: 20%;
+            width: 100%;
+            text-align: center;
+            font-size: 6em;
+            font-family: 'Courier New', Courier, monospace;
+            transform: translateY(-50px);
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h2 class="is-white">Descendant Leaves</h2>
+        <div class="set">
+            <div><img src="./IMG/leaf1.png"></div>
+            <div><img src="./IMG/leaf2.png"></div>
+            <div><img src="./IMG/leaf3.png"></div>
+            <div><img src="./IMG/leaf4.png"></div>
+            <div><img src="./IMG/leaf5.png"></div>
+            <div><img src="./IMG/leaf2.png"></div>
+            <div><img src="./IMG/leaf4.png"></div>
+            <div><img src="./IMG/leaf5.png"></div>
+        </div>
+        <div class="set set2">
+            <div><img src="./IMG/leaf5.png"></div>
+            <div><img src="./IMG/leaf4.png"></div>
+            <div><img src="./IMG/leaf3.png"></div>
+            <div><img src="./IMG/leaf2.png"></div>
+            <div><img src="./IMG/leaf1.png"></div>
+            <div><img src="./IMG/leaf4.png"></div>
+            <div><img src="./IMG/leaf5.png"></div>
+            <div><img src="./IMG/leaf2.png"></div>
+
+                    </div>
+        <div class="set set3">
+            <div><img src="./IMG/leaf5.png"></div>
+            <div><img src="./IMG/leaf4.png"></div>
+            <div><img src="./IMG/leaf3.png"></div>
+            <div><img src="./IMG/leaf2.png"></div>
+            <div><img src="./IMG/leaf1.png"></div>
+            <div><img src="./IMG/leaf4.png"></div>
+            <div><img src="./IMG/leaf5.png"></div>
+            <div><img src="./IMG/leaf2.png"></div>
+
+           
+
+
+                    </div>
+    </section>
+</body>
+</html>
