@@ -5,23 +5,25 @@
       <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
         <style>
-            * {
+          html {
+            background: hsl(234, 62%, 70%) !important;
+          }
+            
+          * {
                 margin: 0px;
                 padding: 0px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                min-height: 100vh;background: hsl(234, 62%, 70%);
+                min-height: 100vh;
+                background: hsl(234, 62%, 70%);
                 position: relative;
                 width: 300px;
                 height: 300px;
                 transform-style: preserve-3d;
                 transform: perspective(500px) rotateX(60deg);
-
-
-
-
             }
+
             .wave span{
                 position: absolute;
                 display: block;
@@ -30,11 +32,15 @@
                 border-radius: 50%;
                 animation: animate 3s ease-in-out infinite;
             }
+
             @keyframes animate {
-                0%,100%{
+                0%,
+                
+                50%{
                     transform: translateZ(-100px);
                 }
-                50%{
+
+                100%{
                     transform: translateZ(100px);
                 }
             }
@@ -47,6 +53,8 @@
                 animation-delay: 1.6s;
 
             }
+
+            
             .wave span:nth-child(2) {
                 top: 10px;
                 left: 10px;
@@ -75,6 +83,7 @@
                 right: 40px;
                 animation-delay: 1.2s;
               }
+              
               .wave span:nth-child(6) {
                 top: 50px;
                 left: 50px;
@@ -147,21 +156,8 @@
                 animation-delay: 0.2s;
               }
 
-
-
-
- 
-
-
-  
-
-  
-  
-
-
-
-
         </style>
+    </head>
         <body>
             <header>
                 <div class="wave">
@@ -182,6 +178,5 @@
                     <span></span>
                 </div>
             </header>
-        </body>
-    </head>
+      </body>
 </html>
